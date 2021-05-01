@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  style(type="text/css").
+    table{
+        border-collapse: collapse;
+    }
+  h1= title
+  a(href="/regionsList") AWS Regions List
+  a(href="/VPCList") VPC List For Region
+  a(href="/subnetsList") Subnets For VPC

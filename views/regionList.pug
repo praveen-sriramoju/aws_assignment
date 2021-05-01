@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div.main
+        h1= title
+        table(border=1)
+            thead
+                tr
+                    th Endpoint
+                    th RegionName
+                each item in data
+                    tr
+                        td= item.Endpoint
+                        td= item.RegionName
